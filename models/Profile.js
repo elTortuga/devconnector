@@ -112,7 +112,7 @@ const ProfileSchema = new Schema({
     },
   },
   date: {
-    date: Date,
+    type: Date,
     default: Date.now
   }
 });
