@@ -23,8 +23,8 @@ class Navbar extends Component {
           </Link>
         </li>
         <li className="nav-item">
-          <a
-            href=""
+          <Link
+            to={{pathname: "", replace: true}}
             onClick={this.onLogoutClick.bind(this)}
             className="nav-link"
           >
@@ -36,7 +36,7 @@ class Navbar extends Component {
               title="You must have a Gravatar connected to your email to display an image"
             />{" "}
             Logout
-          </a>
+          </Link>
         </li>
       </ul>
     );
