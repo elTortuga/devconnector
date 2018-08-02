@@ -7,6 +7,7 @@ import {
 
 // Add post
 export const addPost = postData => dispatch => {
+  
   axios
     .post('/api/posts', postData)
     .then(res => 
